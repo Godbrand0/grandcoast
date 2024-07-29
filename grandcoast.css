@@ -274,3 +274,57 @@ header {
   border-radius: 50%;
   padding: 10px;
 }
+/* rooms section */
+.rooms {
+  text-align: center;
+}
+.room-title {
+  text-align: center;
+  margin: 30px auto;
+}
+.room-title span {
+  color: #f49e09ad;
+  text-transform: uppercase;
+  font-weight: 300px;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+.room-title h2 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+.room_img {
+  width: 1000px;
+  height: 400px;
+  object-fit: cover;
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 20px auto;
+}
+.single-rooms {
+  width: 220px;
+  height: 200px;
+  background: rgba(231, 229, 229, 0.575);
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: 1s;
+}
+.single-rooms:hover {
+  background: #f49e09;
+}
+.single-rooms img {
+  width: 160px;
+  height: 80px;
+  object-fit: cover;
+}
+.room-content {
+  margin: 10px auto;
+}
+.room-content span {
+}
