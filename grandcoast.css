@@ -328,3 +328,72 @@ header {
 }
 .room-content span {
 }
+
+/* events section*/
+
+.events {
+  text-align: center;
+}
+.events_title span {
+  color: #f49e09ad;
+  text-transform: uppercase;
+  font-weight: 300px;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+.events_title h2 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+.events_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  gap: 30px;
+  justify-content: center;
+  margin: 50px auto;
+}
+.events_grid_text {
+  background: #f49e09;
+  height: 500px;
+  color: #fff;
+  margin: 60px auto;
+}
+.events_grid_text img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  margin: 30px auto;
+}
+.events_grid_text h3 {
+  text-transform: uppercase;
+  margin: 20px auto;
+  font-size: 20px;
+  font-weight: 700;
+}
+.events_grid_text h4 {
+  font-size: 15px;
+  font-weight: 400;
+}
+.events_grid_text button {
+  color: #000;
+  background: #fff;
+  height: 40px;
+  width: 140px;
+  font-size: 14px;
+  border: none;
+  margin: 30px auto;
+  cursor: pointer;
+  transition: 1s;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+}
+.events_grid_text button:hover {
+  color: #fff;
+  background: #fb8500;
+}
+.events_grid_img img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
