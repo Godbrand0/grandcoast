@@ -27,3 +27,17 @@ function myFunction(li) {
   let roomImg = document.querySelector(".room_img");
   roomImg.src = smallImg.src;
 }
+
+// const swiper = new Swiper(".swiper", {
+//   // Optional parameters
+//   direction: "vertical",
+//   loop: true,
+// });
+var swiper = new Swiper(".myswiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
