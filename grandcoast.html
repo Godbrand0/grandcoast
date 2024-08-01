@@ -6,11 +6,6 @@
     <meta name="description" content="Best hotel in ondo city" />
     <title>Grandcoast Hotel & Events</title>
     <link rel="stylesheet" href="grandcoast.css" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
   </head>
   <body>
     <nav>
@@ -197,7 +192,7 @@
         <h2>events and places nearby</h2>
       </div>
       <div class="events_grid">
-        <div class="events_grid_text">
+        <div class="events_grid_text event">
           <img src="icons/mountain.png" alt="" class="" />
           <h3>room and suites</h3>
           <h4>
@@ -205,10 +200,10 @@
           </h4>
           <button>Explore</button>
         </div>
-        <div class="events_grid_img">
+        <div class="events_grid_img event">
           <img src="images/hillpackages3.jpg" alt="" />
         </div>
-        <div class="events_grid_text">
+        <div class="events_grid_text event">
           <img src="icons/park.png" alt="" />
           <h3>room and suites</h3>
           <h4>
@@ -216,13 +211,13 @@
           </h4>
           <button>Explore</button>
         </div>
-        <div class="events_grid_img">
+        <div class="events_grid_img event">
           <img src="images/EZPjPf1X0AM6Qak.jpg" alt="" />
         </div>
-        <div class="events_grid_img">
+        <div class="events_grid_img event">
           <img src="images/Ondo_Highlights-6-of-8.jpg" alt="" />
         </div>
-        <div class="events_grid_text">
+        <div class="events_grid_text event">
           <img src="icons/sunbathing.png" alt="" />
           <h3>room and suites</h3>
           <h4>
@@ -230,10 +225,10 @@
           </h4>
           <button>Explore</button>
         </div>
-        <div class="events_grid_img">
+        <div class="events_grid_img event">
           <img src="images/images-2.jpg" alt="" />
         </div>
-        <div class="events_grid_text">
+        <div class="events_grid_text event">
           <img src="icons/music.png" alt="" />
           <h3>room and suites</h3>
           <h4>
@@ -245,32 +240,39 @@
     </div>
 
     <div>
-      <span>reviews</span>
-      <h2>what our clients say</h2>
-    </div>
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <p>
-            “A nice and quiet l place to relax in Akure. It's a home away from
-            home. Above all, it's a secured environment...”
-          </p>
+      <div class="reviews">
+        <span>reviews</span>
+        <h2>what our clients say</h2>
+      </div>
+      <div class="review-container">
+        <div class="review-slider">
+          <div class="slider-track">
+            <div class="review-box">
+              The stay was lovely, loved the breakfast which was included. The
+              place was clean and very close to the train station, and subway.
+              Enjoyed the stay.
+            </div>
+            <div class="review-box">
+              “Attention was fantastic. Rooms were very very good and Breakfast
+              with nice variety. Only problem as usual is the coordination
+              during the reservation about the kind of beds... but we managed on
+              site.”
+            </div>
+            <div class="review-box">
+              “Very helpfull and kind staff. Good service. Nice and clean
+              accomodations. Highly recommendable hotel.”
+            </div>
+            <div class="review-box">
+              Extremely clean room. We loved the contemporary design. Everything
+              looked really new when we were there. We stayed in the small
+              room... some might find it a little tight.. but it was okay for
+              us. Really nice breakfast spread. Only downer is that there was a
+              little musty or damp smell in our room. Just a little whenever we
+              entered. Other than that it was great.
+            </div>
+            <!-- Repeat the boxes if necessary for the infinite effect -->
+          </div>
         </div>
-        <div class="swiper-slide">
-          <p>
-            “A nice and quiet l place to relax in Akure. It's a home away from
-            homment...”
-          </p>
-        </div>
-        <div class="swiper-slide">
-          <p>
-            “A nice and quiet l place to relax in Akure. It's a home away from
-            home. Above all, it's a snment...”
-          </p>
-        </div>
-        ...
       </div>
     </div>
   </body>
@@ -278,7 +280,9 @@
     src="https://kit.fontawesome.com/157ed8b001.js"
     crossorigin="anonymous"
   ></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <script src="grandcoast.js"></script>
 </html>
+<div class="swiper-slide card"></div>
+<div class="swiper-slide"></div>
+<div class="swiper-slide"></div>
