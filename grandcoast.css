@@ -116,59 +116,31 @@ header {
   text-align: center;
 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: ;
+  padding: 10px 50px;
+  justify-content: space-between;
+  background: whitesmoke;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
-.reservation_text {
-  font-size: 35px;
-  font-weight: bold;
-}
-.underline {
-  width: 61px;
-  height: 6px;
-  background: #3c009d;
-  border-radius: 9px;
-}
-.reservation_button {
-  display: flex;
-  gap: 80px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
-  color: #fff;
-}
-.call_button {
-  background: #457b9d;
-  height: 40px;
-  font-size: 20px;
-  font-weight: 600;
-  width: 140px;
-  border-radius: 10px;
+.reservation_digit {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-}
-.call_button i {
-  margin: auto 10px;
-}
-.text_button {
-  background: #457b9d;
-  height: 40px;
-  font-size: 20px;
-  font-weight: 600;
-  width: 140px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.text_button i {
-  margin: auto 10px;
 }
 
+.reservation_digit p {
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.reservation_digit p sup {
+  font-weight: 300;
+  color: #fb8500;
+}
+.reservation_text h4 {
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: uppercase;
+}
 /* Welcome section */
 .welcome_texts {
   margin: 50px 30px;
