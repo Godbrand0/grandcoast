@@ -222,21 +222,79 @@ header {
 }
 .grid_item:hover {
   background: #f49e095e;
+  color: #fb8500;
+  background: #000;
+  backdrop-filter: ;
+}
+.item_1:hover{
   transform: translateY(-5px);
-  background-image: url("images/front-view-glasses-beer-with-wheat.jpg");
+  background-image: url("images/supplier_qxopfhf4xb_16_260x240.jpeg");
   background-size: cover; /* Ensures the background covers the entire grid item */
-  background-position: center; /* Centers the background image */
+  background-position: center; /
+}
+.item_2:hover{
+  transform: translateY(-5px);
+  background-image: url("images/IMG_8661\ 2.JPEG");
+  background-size: cover; /* Ensures the background covers the entire grid item */
+  background-position: center; /
+}
+.item_3:hover{
+  transform: translateY(-5px);
+  background-image: url("images/istockphoto-1412870342-612x612.jpg");
+  background-size: cover; /* Ensures the background covers the entire grid item */
+  background-position: center; /
+}
+.item_4:hover{
+  transform: translateY(-5px);
+  background-image: url("images/1_o0BEYAX6IQQbIHI2wUgoFw.jpg");
+  background-size: cover; /* Ensures the background covers the entire grid item */
+  background-position: center; /
+}
+.grid_item:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 0;
+}
+.item_5:hover{
+  transform: translateY(-5px);
+  background-image: url("images/images-32-1.jpeg");
+  background-size: cover; /* Ensures the background covers the entire grid item */
+  background-position: center; /
+}
+.item_6:hover{
+  transform: translateY(-5px);
+  background-image: url("images/Steel-Canopies-and-car-parking..jpg");
+  background-size: cover; /* Ensures the background covers the entire grid item */
+  background-position: center; /
+}
+.item_7:hover{
+  transform: translateY(-5px);
+  background-image: url("images/images\ \(2\).jpg");
+  background-size: cover; /* Ensures the background covers the entire grid item */
+  background-position: center; /
+}
+.item_8:hover{
+  transform: translateY(-5px);
+  background-image: url("images/laundry-services-in-lagos-nigeria.jpg");
+  background-size: cover; /* Ensures the background covers the entire grid item */
+  background-position: center; /
 }
 .grid-item:hover::before {
   opacity: 0.5; /* Change opacity on hover */
 }
-.grid_item img {
-  width: 30px;
+.grid_item span {
+  font-size: 50px;
 }
 .grid_item p {
-  margin: 20px auto;
+  margin: 15px auto;
   font-size: 20px;
   font-weight: 700;
+  text-transform: capitalize;
 }
 .grid_item .fa-arrow-right {
   color: #f49e09;
@@ -430,7 +488,7 @@ header {
 
 /* footer section*/
 footer {
-  margin: 20px auto;
+  margin-top: 20px;
 
   padding: 60px 40px;
   display: flex;
