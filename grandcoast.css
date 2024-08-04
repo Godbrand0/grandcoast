@@ -77,40 +77,46 @@ header {
   opacity: 0.9;
 }
 .header_texts {
-  position: absolute;
+ position: absolute;
   text-align: center;
 }
-.header_text_1 {
+.header_texts h1 {
   font-size: 40px;
   color: white;
   letter-spacing: 4px;
   font-weight: bold;
 }
-.btn {
-  color: #fff;
-  background: #f49e09;
-  font-size: 20px;
-  border-radius: 20px;
-  width: 200px;
-  margin-top: 20px;
-  border: none;
-  height: 50px;
-  cursor: pointer;
-}
-.btn i {
-  background: #fff;
-  color: #ffb703;
-  border-radius: 50%;
-  padding: 6px 6px;
-  margin: 8px 10px;
-}
-
-.header_text_2 {
+.header_texts h4 {
   font-size: 22px;
   color: #ffb703;
   letter-spacing: 2px;
   margin-top: 10px;
 }
+.btn {
+  color: #fff;
+  background: #f49e09;
+  font-size: 14px;
+  padding: 18px 14px;
+  letter-spacing: 2px;
+  width: auto;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 1s;
+}
+.btn:hover{
+  background: #af7004;
+}
+.btn span {
+  background: #fff;
+  color: #ffb703;
+  border-radius: 50%;
+  padding: 4px 4px;
+  margin: 3px 6px;
+}
+
+
 
 .reservation {
   text-align: center;
@@ -223,8 +229,7 @@ header {
 .grid_item:hover {
   background: #f49e095e;
   color: #fb8500;
-  background: #000;
-  backdrop-filter: ;
+  z-index: 2;
 }
 .item_1:hover{
   transform: translateY(-5px);
@@ -296,7 +301,7 @@ header {
   font-weight: 700;
   text-transform: capitalize;
 }
-.grid_item .fa-arrow-right {
+.grid_item .arrow_right {
   color: #f49e09;
   font-size: 20px;
   background: #f49e0942;
@@ -578,4 +583,92 @@ footer {
 .follow_icons i {
   margin: auto 10px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav_text{
+    font-size: 24px;
+  }
+  .nav_links{
+    display: none;
+  }
+  .header_img{
+    width: 90%;
+  }
+  .header_texts{
+    padding: auto 20px;
+    text-align: center;
+  }
+  .header_texts h1{
+font-size: 25px;
+letter-spacing: 2px;
+  }
+  .header_texts h4{
+    font-size: 18px;
+  }
+  .reservation{
+    display: block;
+  }
+  .welcome_title p{
+    font-size: 15px;
+  }
+  .welcome_title h2{
+    font-size: 22px;
+  }
+  .welcome_text_1{
+    display: block;
+  }
+  .image_1{
+    width: 100%;
+    height: 200px;
+  }
+  .welcome_text_2{
+    width: 100%;
+  }
+  .welcome_text_2 h3{
+    font-size: 24px;
+  }
+  .welcome_text_2 h4{
+    font-size: 10px;
+  }
+  .btn{
+    font-size: 16px;
+    width: fit-content;
+    height: 35px;
+    padding: 10px 12px;
+  }
+  .btn span{
+    font-size: 13px;
+  }
+  .facility_title p{
+    font-size: 18px;
+  }
+  .facility_title h2{
+    font-size: 22px;
+  }
+  .facility_grid{
+    display: block;
+    
+  }
+  .grid_item{
+    margin-top: 20px;
+height: fit-content;
+  }
+  .grid_item span {
+    font-size: 30px;
+  }
+  .grid_item p {
+    margin: 10px auto;
+    font-size: 15px;
+   
+  }
+  .rooms{
+    display: none;
+  }
+  .events_grid{
+    display: block;
+  }
+  .events_grid_text{
+    
+  }
 }
