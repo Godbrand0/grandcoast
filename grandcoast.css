@@ -21,8 +21,7 @@ nav {
   background: whitesmoke;
   padding: 10px;
 }
-.nav_logo {
-}
+
 .nav_text {
   font-size: 30px;
 }
@@ -63,6 +62,51 @@ a:hover {
   background: #fb8500;
   border-radius: 13px;
 }
+nav .material-symbols-sharp {
+  font-size: 45px;
+  cursor: pointer;
+  display: none;
+}
+.side-bar {
+  height: 100%;
+  width: 400px;
+  position: fixed;
+
+  top: 0;
+  left: -100%;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+  transition: 350ms;
+  z-index: 2;
+}
+.side-bar span {
+  font-size: 40px;
+  cursor: pointer;
+  font-weight: 700;
+  text-align: right;
+}
+.side_links {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+.side_links li {
+  font-size: 23px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 7px;
+  border-bottom: 3px gray solid;
+  width: 100%;
+}
+.active {
+  left: 0;
+  transition: 350ms;
+}
 /* header */
 header {
   display: flex;
@@ -77,7 +121,7 @@ header {
   opacity: 0.9;
 }
 .header_texts {
- position: absolute;
+  position: absolute;
   text-align: center;
 }
 .header_texts h1 {
@@ -105,7 +149,7 @@ header {
   text-transform: uppercase;
   transition: 1s;
 }
-.btn:hover{
+.btn:hover {
   background: #af7004;
 }
 .btn span {
@@ -115,8 +159,6 @@ header {
   padding: 4px 4px;
   margin: 3px 6px;
 }
-
-
 
 .reservation {
   text-align: center;
@@ -231,29 +273,29 @@ header {
   color: #fb8500;
   z-index: 2;
 }
-.item_1:hover{
+.item_1:hover {
   transform: translateY(-5px);
   background-image: url("images/supplier_qxopfhf4xb_16_260x240.jpeg");
-  background-size: cover; /* Ensures the background covers the entire grid item */
-  background-position: center; /
+  background-size: cover;
+  background-position: center;
 }
-.item_2:hover{
+.item_2:hover {
   transform: translateY(-5px);
   background-image: url("images/IMG_8661\ 2.JPEG");
-  background-size: cover; /* Ensures the background covers the entire grid item */
-  background-position: center; /
+  background-size: cover;
+  background-position: center;
 }
-.item_3:hover{
+.item_3:hover {
   transform: translateY(-5px);
   background-image: url("images/istockphoto-1412870342-612x612.jpg");
-  background-size: cover; /* Ensures the background covers the entire grid item */
-  background-position: center; /
+  background-size: cover;
+  background-position: center;
 }
-.item_4:hover{
+.item_4:hover {
   transform: translateY(-5px);
   background-image: url("images/1_o0BEYAX6IQQbIHI2wUgoFw.jpg");
-  background-size: cover; /* Ensures the background covers the entire grid item */
-  background-position: center; /
+  background-size: cover;
+  background-position: center;
 }
 .grid_item:hover:before {
   content: "";
@@ -262,35 +304,35 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
-.item_5:hover{
+.item_5:hover {
   transform: translateY(-5px);
   background-image: url("images/images-32-1.jpeg");
-  background-size: cover; /* Ensures the background covers the entire grid item */
-  background-position: center; /
+  background-size: cover;
+  background-position: center;
 }
-.item_6:hover{
+.item_6:hover {
   transform: translateY(-5px);
   background-image: url("images/Steel-Canopies-and-car-parking..jpg");
-  background-size: cover; /* Ensures the background covers the entire grid item */
-  background-position: center; /
+  background-size: cover;
+  background-position: center;
 }
-.item_7:hover{
+.item_7:hover {
   transform: translateY(-5px);
   background-image: url("images/images\ \(2\).jpg");
-  background-size: cover; /* Ensures the background covers the entire grid item */
-  background-position: center; /
+  background-size: cover;
+  background-position: center;
 }
-.item_8:hover{
+.item_8:hover {
   transform: translateY(-5px);
   background-image: url("images/laundry-services-in-lagos-nigeria.jpg");
-  background-size: cover; /* Ensures the background covers the entire grid item */
-  background-position: center; /
+  background-size: cover;
+  background-position: center;
 }
 .grid-item:hover::before {
-  opacity: 0.5; /* Change opacity on hover */
+  opacity: 0.5;
 }
 .grid_item span {
   font-size: 50px;
@@ -359,8 +401,6 @@ header {
 }
 .room-content {
   margin: 10px auto;
-}
-.room-content span {
 }
 
 /* events section*/
@@ -512,7 +552,7 @@ footer {
 .footer_1 h3 {
   font-size: 30px;
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: #fff;
   margin: 20px auto;
   letter-spacing: 2px;
@@ -567,7 +607,6 @@ footer {
 }
 .footer_3 {
   text-align: right;
-  margin-left: ;
 }
 .footer_3 h4 {
   font-size: 14px;
@@ -586,73 +625,73 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  .nav_text{
+  .nav_text {
     font-size: 24px;
   }
-  .nav_links{
+  .nav_links {
     display: none;
   }
-  .header_img{
-    width: 90%;
+  nav .material-symbols-sharp {
+    display: block;
   }
-  .header_texts{
+
+  .header_texts {
     padding: auto 20px;
     text-align: center;
   }
-  .header_texts h1{
-font-size: 25px;
-letter-spacing: 2px;
+  .header_texts h1 {
+    font-size: 25px;
+    letter-spacing: 2px;
   }
-  .header_texts h4{
+  .header_texts h4 {
     font-size: 18px;
   }
-  .reservation{
+  .reservation {
     display: block;
   }
-  .welcome_title p{
+  .welcome_title p {
     font-size: 15px;
   }
-  .welcome_title h2{
+  .welcome_title h2 {
     font-size: 22px;
   }
-  .welcome_text_1{
+  .welcome_text_1 {
     display: block;
   }
-  .image_1{
+  .image_1 {
     width: 100%;
     height: 200px;
   }
-  .welcome_text_2{
+  .welcome_text_2 {
     width: 100%;
   }
-  .welcome_text_2 h3{
+  .welcome_text_2 h3 {
     font-size: 24px;
   }
-  .welcome_text_2 h4{
+  .welcome_text_2 h4 {
     font-size: 10px;
   }
-  .btn{
+  .btn {
     font-size: 16px;
     width: fit-content;
     height: 35px;
     padding: 10px 12px;
   }
-  .btn span{
+  .btn span {
     font-size: 13px;
   }
-  .facility_title p{
+  .facility_title p {
+    font-size: 13px;
+  }
+  .facility_title h2 {
     font-size: 18px;
   }
-  .facility_title h2{
-    font-size: 22px;
-  }
-  .facility_grid{
+  .facility_grid {
     display: block;
-    
   }
-  .grid_item{
+  .grid_item {
     margin-top: 20px;
-height: fit-content;
+    height: fit-content;
   }
   .grid_item span {
     font-size: 30px;
@@ -660,15 +699,161 @@ height: fit-content;
   .grid_item p {
     margin: 10px auto;
     font-size: 15px;
-   
   }
-  .rooms{
+  .rooms {
     display: none;
   }
-  .events_grid{
-    display: block;
+  .events_title span {
+    font-size: 10px;
   }
-  .events_grid_text{
-    
+  .events_title h2 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  .events_grid {
+    display: grid;
+    grid-template-columns: repeat(1, 330px);
+    gap: 5px;
+  }
+  .events_grid_text {
+    height: 250px;
+  }
+  .events_grid_text h3 {
+    margin: 10px auto;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .events_grid_text h4 {
+    font-size: 10px;
+    font-weight: 300;
+  }
+  .events_grid_text img {
+    width: 40px;
+    margin: 10px auto;
+    height: 40px;
+  }
+  .events_grid_text button {
+    padding: 10px 30px;
+    width: auto;
+    font-size: 10px;
+
+    margin: 20px auto;
+
+    transition: 1s;
+
+    letter-spacing: 1.8px;
+  }
+  .events_grid_img img {
+    width: 100%;
+    height: 200px;
+  }
+  .reviews span {
+    font-size: 10px;
+  }
+  .reviews h2 {
+    font-size: 16px;
+  }
+  .review-container {
+    width: 100%;
+  }
+  .review-slider {
+    width: auto;
+  }
+  .review-box {
+    width: 250px;
+    font-size: 10px;
+  }
+  footer {
+    display: block;
+    height: auto;
+    padding: 30px 20px;
+    width: 100%;
+  }
+  .footer_1 {
+    text-align: center;
+  }
+  .useful_links {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    gap: 50px;
+  }
+  .footer_1 h3 {
+    font-size: 17px;
+
+    margin: 10px auto;
+    letter-spacing: 1px;
+  }
+  .useful_links ul li {
+    margin: 10px auto;
+    font-size: 15px;
+  }
+  .footer_2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footer_logo {
+    margin: 20px auto;
+  }
+  .footer_logo h1 {
+    font-size: 40px;
+  }
+  .footer_logo p {
+    font-size: 18px;
+  }
+  .location_text {
+    margin: 13px;
+  }
+  .location_text h3 {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+  }
+  .location_text p {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .contact_text {
+    margin-top: 18px;
+  }
+  .contact_text h3 {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .contact_text p {
+    font-size: 15px;
+    margin: 2px auto;
+    text-decoration: underline;
+    text-transform: lowercase;
+  }
+  .contact_text h4 {
+    color: #fb8500;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+  .footer_3 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .footer_3 h4 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .follow {
+    margin: 5px auto;
+  }
+  .follow p {
+    font-size: 12px;
+    letter-spacing: 1.3px;
+    font-weight: 600;
+  }
+  .follow_icons i {
+    font-size: 14px;
   }
 }
