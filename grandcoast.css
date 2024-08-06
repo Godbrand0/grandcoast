@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400..700&family=Zain:wght@200;300;400;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +7,7 @@
 }
 body {
   padding: 10px;
-  font-family: "Poppins", sans-serif;
-}
-html,
-body {
-  scroll-behavior: smooth;
+  font-family: "Zain", sans-serif;
 }
 
 nav {
@@ -198,10 +193,14 @@ header {
 .welcome_title p {
   text-transform: capitalize;
   color: #f49e09;
-  font-size: 30px;
+  font-weight: 900;
+  font-size: 60px;
+
+  font-family: "Dancing Script", cursive;
 }
 .welcome_title h2 {
   font-size: 40px;
+  font-family: "Bona Nova SC", serif;
 }
 .welcome_text_1 {
   display: flex;
@@ -230,11 +229,26 @@ header {
   letter-spacing: 1px;
   font-weight: 400;
   margin: 20px auto;
-  font-size: 16px;
+  font-size: 20px;
   color: gray;
 }
 .welcome_text_2 h4 span {
   font-weight: 700;
+}
+.btn_2 {
+  border: none;
+  background: #f49e09;
+  color: #fff;
+  padding: 15px 25px;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 1s;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+.btn_2:hover {
+  background: #af7004;
 }
 
 /* facilities section */
@@ -246,13 +260,17 @@ header {
   margin: 50px auto;
 }
 
-.facility_title p {
+.facility_title span {
   text-transform: capitalize;
   color: #f49e09;
-  font-size: 30px;
+  font-weight: 900;
+  font-size: 60px;
+
+  font-family: "Dancing Script", cursive;
 }
 .facility_title h2 {
   font-size: 40px;
+  font-family: "Bona Nova SC", serif;
 }
 .facility_grid {
   display: grid;
@@ -359,16 +377,19 @@ header {
   margin: 30px auto;
 }
 .room-title span {
-  color: #f49e09ad;
-  text-transform: uppercase;
-  font-weight: 300px;
-  font-size: 20px;
+  color: #f49e09;
+
+  font-weight: 900;
+  font-size: 60px;
+
+  font-family: "Dancing Script", cursive;
   letter-spacing: 5px;
 }
 .room-title h2 {
   font-size: 40px;
   letter-spacing: 2px;
   margin-top: 10px;
+  font-family: "Bona Nova SC", serif;
 }
 .room_img {
   width: 1000px;
@@ -387,7 +408,7 @@ header {
   height: 200px;
   background: rgba(231, 229, 229, 0.575);
   text-align: center;
-  padding: 20px;
+  padding: 20px 10px;
   cursor: pointer;
   transition: 1s;
 }
@@ -395,12 +416,13 @@ header {
   background: #f49e09;
 }
 .single-rooms img {
-  width: 160px;
+  width: 100%;
   height: 80px;
   object-fit: cover;
 }
-.room-content {
+.room-content h3 {
   margin: 10px auto;
+  font-family: "Bona Nova SC", serif;
 }
 
 /* events section*/
@@ -409,16 +431,18 @@ header {
   text-align: center;
 }
 .events_title span {
-  color: #f49e09ad;
-  text-transform: uppercase;
-  font-weight: 300px;
-  font-size: 20px;
+  color: #f49e09;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 60px;
   letter-spacing: 5px;
+  font-family: "Dancing Script", cursive;
 }
 .events_title h2 {
   font-size: 40px;
   letter-spacing: 2px;
   margin-top: 10px;
+  font-family: "Bona Nova SC", serif;
 }
 .events_grid {
   display: grid;
@@ -445,11 +469,12 @@ header {
 .events_grid_text h3 {
   text-transform: uppercase;
   margin: 20px auto;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
+  font-family: "Bona Nova SC", serif;
 }
 .events_grid_text h4 {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 400;
 }
 .events_grid_text button {
@@ -481,16 +506,19 @@ header {
   text-align: center;
 }
 .reviews span {
-  color: #f49e09ad;
-  text-transform: uppercase;
-  font-weight: 300px;
-  font-size: 20px;
+  color: #f49e09;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 60px;
+
+  font-family: "Dancing Script", cursive;
   letter-spacing: 5px;
 }
 .reviews h2 {
   font-size: 40px;
   letter-spacing: 2px;
   margin-top: 10px;
+  font-family: "Bona Nova SC", serif;
 }
 .review-container {
   display: flex;
@@ -517,8 +545,8 @@ header {
   margin: 10px;
   padding: 20px;
   background-color: #e3e3e3;
-  border: 1px solid #ddd;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  font-size: 25px;
 }
 @keyframes slide {
   0% {
@@ -550,17 +578,18 @@ footer {
   gap: 50px;
 }
 .footer_1 h3 {
-  font-size: 30px;
+  font-size: 23px;
   font-weight: 400;
   text-transform: uppercase;
   color: #fff;
   margin: 20px auto;
   letter-spacing: 2px;
+  font-family: "Bona Nova SC", serif;
 }
 .useful_links ul li {
   color: gray;
   margin: 10px auto;
-  font-size: 14px;
+  font-size: 20px;
 }
 .useful_links ul li a {
   text-decoration: none;
@@ -574,28 +603,33 @@ footer {
 }
 .footer_logo h1 {
   font-size: 40px;
+  letter-spacing: 2px;
+}
+.footer_2 p {
+  letter-spacing: 2px;
+  font-size: 18px;
 }
 .location_text {
   margin: 20px;
 }
 .location_text h3 {
   text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 700;
   letter-spacing: 2px;
 }
 .location_text p {
-  font-size: 15px;
+  font-size: 20px;
   margin-top: 5px;
 }
 .contact_text h3 {
   text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 700;
   letter-spacing: 2px;
 }
 .contact_text p {
-  font-size: 17px;
+  font-size: 20px;
   margin: 10px;
   text-decoration: underline;
   text-transform: lowercase;
@@ -609,7 +643,7 @@ footer {
   text-align: right;
 }
 .footer_3 h4 {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
 }
 .follow {
@@ -677,8 +711,9 @@ footer {
     height: 35px;
     padding: 10px 12px;
   }
-  .btn span {
-    font-size: 13px;
+  .btn_2 {
+    font-size: 10px;
+    padding: 10px 20px;
   }
   .facility_title p {
     font-size: 13px;
