@@ -83,7 +83,7 @@ nav .material-symbols-sharp {
   flex-direction: column;
 
   transition: 350ms;
-  z-index: 2;
+  z-index: 12;
 }
 .side-bar span {
   font-size: 40px;
@@ -104,6 +104,7 @@ nav .material-symbols-sharp {
   padding-bottom: 7px;
   border-bottom: 3px gray solid;
   width: 100%;
+  padding-left: 10px;
 }
 .active {
   left: 0;
@@ -127,14 +128,14 @@ header {
   text-align: center;
 }
 .header_texts h1 {
-  font-size: 40px;
+  font-size: 60px;
   color: white;
   letter-spacing: 4px;
   font-weight: bold;
   font-family: "Dancing Script", cursive;
 }
 .header_texts h4 {
-  font-size: 22px;
+  font-size: 30px;
   color: #ffb703;
   letter-spacing: 2px;
   margin-top: 10px;
@@ -723,11 +724,14 @@ footer {
   }
 
   .facility_grid {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(1, 330px);
+    gap: 30px;
+    justify-content: center;
   }
   .grid_item {
-    margin-top: 20px;
     height: fit-content;
+    width: 100%;
   }
   .grid_item span {
     font-size: 30px;
