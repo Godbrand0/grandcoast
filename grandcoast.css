@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400..700&family=Zain:wght@200;300;400;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400..700&family=Limelight&family=Zain:wght@200;300;400;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,8 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  background: whitesmoke;
+  background: #023047;
+  color: #d8d5d5;
   padding: 10px 27px;
   position: fixed;
   width: 100%;
@@ -25,14 +26,16 @@ nav {
 .nav_logo h1 {
   font-size: 50px;
   left: 1px;
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
 }
 .nav_logo h1 span {
-  color: gold;
+  color: #f49e09;
 }
 .nav_logo p {
   font-size: 18px;
   letter-spacing: 3px;
-  margin-top: -20px;
+  margin-top: -15px;
 }
 .nav_links {
   display: flex;
@@ -46,9 +49,10 @@ nav {
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: #d8d5d5;
   padding: 6px 5px;
   transition: 0.3s;
+  font-weight: 600;
 }
 a:hover {
   border-bottom: 2px solid #f49e09;
@@ -133,6 +137,7 @@ header {
   letter-spacing: 4px;
   font-weight: bold;
   font-family: "Dancing Script", cursive;
+  text-transform: capitalize;
 }
 .header_texts h4 {
   font-size: 30px;
@@ -144,6 +149,7 @@ header {
   color: #fff;
   background: #f49e09;
   font-size: 14px;
+  font-weight: 700;
   padding: 18px 14px;
   letter-spacing: 2px;
   width: auto;
@@ -546,7 +552,7 @@ header {
 .slider-track {
   display: flex;
   width: fit-content;
-  animation: slide 40s linear infinite;
+  animation: slide 70s linear infinite;
 }
 
 .review-box {
@@ -577,7 +583,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background: #131212a9;
+  background: #023047;
   height: 450px;
   transition: 1s;
 }
@@ -596,8 +602,8 @@ footer {
   letter-spacing: 2px;
   font-family: "Bona Nova SC", serif;
 }
-.useful_links ul li {
-  color: gray;
+.useful_links ul li a {
+  color: #d8d5d5;
   margin: 10px auto;
   font-size: 20px;
 }
@@ -614,6 +620,11 @@ footer {
 .footer_logo h1 {
   font-size: 40px;
   letter-spacing: 2px;
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+}
+.footer_logo h1 span {
+  color: #fb8500;
 }
 .footer_2 p {
   letter-spacing: 2px;
@@ -621,6 +632,7 @@ footer {
 }
 .location_text {
   margin: 20px;
+  color: #d8d5d5;
 }
 .location_text h3 {
   text-transform: uppercase;
@@ -637,12 +649,14 @@ footer {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 2px;
+  color: #d8d5d5;
 }
 .contact_text p {
   font-size: 20px;
   margin: 10px;
   text-decoration: underline;
   text-transform: lowercase;
+  color: #d8d5d5;
 }
 .contact_text h4 {
   color: #fb8500;
@@ -655,6 +669,7 @@ footer {
 .footer_3 h4 {
   font-size: 20px;
   font-weight: 400;
+  color: #d8d5d5;
 }
 .follow {
   margin: 40px auto;
@@ -662,10 +677,12 @@ footer {
 .follow p {
   text-transform: uppercase;
   letter-spacing: 2.4px;
+  color: #d8d5d5;
 }
 .follow_icons i {
   margin: auto 10px;
   cursor: pointer;
+  color: #d8d5d5;
 }
 
 @media only screen and (max-width: 600px) {
