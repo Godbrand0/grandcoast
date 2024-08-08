@@ -24,7 +24,7 @@ nav {
 }
 
 .nav_logo h1 {
-  font-size: 50px;
+  font-size: 40px;
   left: 1px;
   font-family: "Limelight", sans-serif;
   font-weight: 400;
@@ -203,66 +203,101 @@ header {
 }
 /* Welcome section */
 .welcome_texts {
-  margin: 50px 30px;
+  margin: 50px auto;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  background: rgba(220, 220, 220, 0.541);
+  padding: 140px 20px;
 }
 
-.welcome_title p {
+.welcome_text_1 {
+  width: 40%;
+  text-align: left;
+  margin-top: 70px;
+}
+.welcome_text_1 p {
   text-transform: capitalize;
   color: #f49e09;
   font-weight: 900;
   font-size: 60px;
-
   font-family: "Dancing Script", cursive;
 }
-.welcome_title h2 {
-  font-size: 40px;
+.welcome_text_1 h2 {
+  font-size: 50px;
   font-family: "Bona Nova SC", serif;
+  margin: 20px auto;
 }
-.welcome_text_1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 60px auto;
-  gap: 70px;
+.welcome_text_1 h4 {
+  font-size: 25px;
+  margin: 30px auto;
+  font-weight: 300;
 }
-.image_1 {
-  width: 40%;
+.welcome_text_1 img {
+  width: 600px;
   height: 500px;
   object-fit: cover;
 }
-
 .welcome_text_2 {
-  width: 36%;
-  text-align: left;
+  margin-top: -200px;
 }
-.welcome_text_2 h3 {
-  font-size: 40px;
-  margin: 40px auto;
-  letter-spacing: 2px;
-}
-.welcome_text_2 h4 {
-  line-height: 30px;
-  letter-spacing: 1px;
-  font-weight: 400;
+.welcome_text_2 img {
+  width: 600px;
+  height: 500px;
   margin: 20px auto;
+  object-fit: cover;
+}
+.information {
+  margin: 20px auto;
+  background: whitesmoke;
+  padding: 20px auto;
+}
+.information_1 {
+  margin: 20px auto;
+}
+.information_1 h3 {
+  text-transform: uppercase;
   font-size: 20px;
   color: gray;
+  font-weight: 500;
+  font-family: "Bona Nova SC", serif;
 }
-.welcome_text_2 h4 span {
-  font-weight: 700;
+.information_1 p {
+  margin: 15px auto;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  font-weight: 400;
 }
+.information_2 h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: gray;
+  font-weight: 500;
+  font-family: "Bona Nova SC", serif;
+}
+.information_2 {
+  margin: 40px auto;
+}
+.information_2 p {
+  margin: 4px auto;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
 .btn_2 {
   border: none;
   background: #f49e09;
   color: #fff;
-  padding: 15px 25px;
-  font-size: 20px;
+  padding: 10px 15px;
+  font-size: 15px;
   border-radius: 8px;
   cursor: pointer;
   transition: 1s;
   letter-spacing: 2px;
-  margin-top: 10px;
+  margin: 40px auto;
 }
 .btn_2:hover {
   background: #af7004;
@@ -271,13 +306,42 @@ header {
 /* facilities section */
 .facility {
   display: flex;
-  flex-direction: column;
+  gap: 70px;
   justify-content: center;
   text-align: center;
-  margin: 50px auto;
+  margin: 70px auto;
+  padding: auto 50px;
+  flex-wrap: wrap;
+}
+.facility img {
+  width: 40%;
+  height: 600px;
+  object-fit: cover;
+}
+.facility_title {
+  width: 40%;
+  text-align: left;
+}
+.facility_list {
+  display: flex;
+
+  align-items: center;
+  gap: 70px;
+}
+.facility_list ul li {
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+  margin: 13px auto;
+  text-transform: capitalize;
+}
+.facility_list ul li span {
+  color: #fb8500;
+  font-size: 30px;
+  margin: auto 10px;
 }
 
-.facility_title span {
+.facility_title h2 {
   text-transform: capitalize;
   color: #f49e09;
   font-weight: 900;
@@ -285,106 +349,15 @@ header {
 
   font-family: "Dancing Script", cursive;
 }
-.facility_title h2 {
+.facility_title h3 {
   font-size: 40px;
   font-family: "Bona Nova SC", serif;
 }
-.facility_grid {
-  display: grid;
-  grid-template-columns: repeat(4, 280px);
-  gap: 30px;
-  justify-content: center;
-  margin: 50px auto;
+.facility p {
+  margin: 20px auto;
+  font-size: 20px;
 }
-.grid_item {
-  width: 280px;
-  height: 220px;
-  background: rgb(204, 202, 202);
-  padding: 20px;
-  transition: 1s;
-}
-.grid_item:hover {
-  background: #f49e095e;
-  color: #fb8500;
-  z-index: 2;
-}
-.item_1:hover {
-  transform: translateY(-5px);
-  background-image: url("images/supplier_qxopfhf4xb_16_260x240.jpeg");
-  background-size: cover;
-  background-position: center;
-}
-.item_2:hover {
-  transform: translateY(-5px);
-  background-image: url("images/IMG_8661\ 2.JPEG");
-  background-size: cover;
-  background-position: center;
-}
-.item_3:hover {
-  transform: translateY(-5px);
-  background-image: url("images/istockphoto-1412870342-612x612.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.item_4:hover {
-  transform: translateY(-5px);
-  background-image: url("images/1_o0BEYAX6IQQbIHI2wUgoFw.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.grid_item:hover:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 
-  z-index: 0;
-}
-.item_5:hover {
-  transform: translateY(-5px);
-  background-image: url("images/images-32-1.jpeg");
-  background-size: cover;
-  background-position: center;
-}
-.item_6:hover {
-  transform: translateY(-5px);
-  background-image: url("images/Steel-Canopies-and-car-parking..jpg");
-  background-size: cover;
-  background-position: center;
-}
-.item_7:hover {
-  transform: translateY(-5px);
-  background-image: url("images/images\ \(2\).jpg");
-  background-size: cover;
-  background-position: center;
-}
-.item_8:hover {
-  transform: translateY(-5px);
-  background-image: url("images/laundry-services-in-lagos-nigeria.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.grid-item:hover::before {
-  opacity: 0.5;
-}
-.grid_item span {
-  font-size: 50px;
-}
-.grid_item p {
-  margin: 15px auto;
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: capitalize;
-}
-.grid_item .arrow_right {
-  color: #f49e09;
-  font-size: 20px;
-  background: #f49e0942;
-  border-radius: 50%;
-  padding: 10px;
-}
 /* rooms section */
 .rooms {
   text-align: center;
@@ -740,8 +713,19 @@ footer {
   .welcome_title h2 {
     font-size: 22px;
   }
-  .welcome_text_1 {
+  .welcome_texts {
     display: block;
+    padding: 10px 1px;
+  }
+  .welcome_text_1 {
+    width: 100%;
+  }
+  .welcome_text_1 img {
+    width: 100%;
+    height: 300px;
+  }
+  .welcome_text_1 h2 {
+    font-size: 28px;
   }
   .image_1 {
     width: 100%;
@@ -749,6 +733,11 @@ footer {
   }
   .welcome_text_2 {
     width: 100%;
+    margin-top: 0px;
+  }
+  .welcome_text_2 img {
+    width: 100%;
+    height: 300px;
   }
   .welcome_text_2 h3 {
     font-size: 24px;
@@ -765,28 +754,25 @@ footer {
     font-size: 10px;
     padding: 10px 20px;
   }
-
-  .facility_grid {
-    display: grid;
-    grid-template-columns: repeat(1, 330px);
-    gap: 30px;
-    justify-content: center;
-  }
-  .grid_item {
-    height: fit-content;
-    width: 100%;
-  }
-  .grid_item span {
-    font-size: 30px;
-  }
-  .grid_item p {
-    margin: 10px auto;
-    font-size: 20px;
-  }
   .rooms {
     display: none;
   }
-
+  .facility {
+    display: block;
+  }
+  .facility img {
+    width: 100%;
+    height: 300px;
+  }
+  .facility_title {
+    width: 100%;
+  }
+  .facility_list {
+    gap: 20px;
+  }
+  .facility_list ul li {
+    font-size: 16px;
+  }
   .events_title h2 {
     font-size: 16px;
     letter-spacing: 1px;
