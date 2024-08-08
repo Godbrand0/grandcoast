@@ -47,14 +47,14 @@ nav {
 .link {
   cursor: pointer;
 }
-a {
+.nav_links a {
   text-decoration: none;
   color: #d8d5d5;
   padding: 6px 5px;
   transition: 0.3s;
   font-weight: 600;
 }
-a:hover {
+.nav_links a:hover {
   border-bottom: 2px solid #f49e09;
   color: #f49e09;
 }
@@ -65,7 +65,7 @@ a:hover {
   justify-content: center;
   width: 120px;
   text-align: center;
-  background: #fb8500;
+  background: #f49e09;
   border-radius: 13px;
 }
 nav .material-symbols-sharp {
@@ -276,6 +276,7 @@ header {
   color: gray;
   font-weight: 500;
   font-family: "Bona Nova SC", serif;
+  margin: 20px auto;
 }
 .information_2 {
   margin: 40px auto;
@@ -419,6 +420,7 @@ header {
 
 .events {
   text-align: center;
+  margin: 40px auto;
 }
 .events_title span {
   color: #f49e09;
@@ -517,7 +519,7 @@ header {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 .review-slider {
-  width: 80%;
+  width: 95%;
   overflow: hidden;
   position: relative;
 
@@ -531,7 +533,8 @@ header {
 
 .review-box {
   min-width: 300px;
-  height: fit-content;
+  height: 200px;
+  overflow: hidden;
   margin: 10px;
   padding: 20px;
   background-color: #e3e3e3;
@@ -603,6 +606,7 @@ footer {
 .footer_2 p {
   letter-spacing: 2px;
   font-size: 18px;
+  color: whitesmoke;
 }
 .location_text {
   margin: 20px;
@@ -659,11 +663,11 @@ footer {
   color: #d8d5d5;
 }
 .whatsapp {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   position: fixed;
-  top: 50%;
-  right: 0;
+  top: 90%;
+  right: 20px;
   animation: whatsapp 2s linear infinite;
 }
 .whatsapp a img {
@@ -719,6 +723,7 @@ footer {
   }
   .welcome_text_1 {
     width: 100%;
+    padding: 5px 10px;
   }
   .welcome_text_1 img {
     width: 100%;
@@ -734,6 +739,7 @@ footer {
   .welcome_text_2 {
     width: 100%;
     margin-top: 0px;
+    padding: 5px 10px;
   }
   .welcome_text_2 img {
     width: 100%;
@@ -759,6 +765,7 @@ footer {
   }
   .facility {
     display: block;
+    padding: 5px 10px;
   }
   .facility img {
     width: 100%;
@@ -769,6 +776,9 @@ footer {
   }
   .facility_list {
     gap: 20px;
+  }
+  .facility_list ul li span {
+    font-size: 25px;
   }
   .facility_list ul li {
     font-size: 16px;
