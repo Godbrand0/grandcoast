@@ -50,7 +50,7 @@ nav {
 .nav_links a {
   text-decoration: none;
   color: #d8d5d5;
-  padding: 6px 5px;
+  padding: 0px 7px;
   transition: 0.3s;
   font-weight: 600;
 }
@@ -110,6 +110,10 @@ nav .material-symbols-sharp {
   width: 100%;
   padding-left: 10px;
 }
+.side_links li a {
+  text-decoration: none;
+  color: #000;
+}
 .active {
   left: 0;
   transition: 350ms;
@@ -125,6 +129,7 @@ header {
   height: 500px;
   object-fit: cover;
   position: relative;
+
   opacity: 0.9;
 }
 .header_texts {
@@ -211,6 +216,18 @@ header {
   gap: 150px;
   background: rgba(220, 220, 220, 0.541);
   padding: 140px 20px;
+  animation: appear linear;
+  animation-timeline: view();
+}
+@keyframes appear {
+  from {
+    opacity: 1;
+    scale: 1;
+  }
+  to {
+    opacity: 0.9;
+    scale: 0.9;
+  }
 }
 
 .welcome_text_1 {
@@ -313,6 +330,8 @@ header {
   margin: 70px auto;
   padding: auto 50px;
   flex-wrap: wrap;
+  animation: appear linear;
+  animation-timeline: view();
 }
 .facility img {
   width: 40%;
@@ -362,6 +381,8 @@ header {
 /* rooms section */
 .rooms {
   text-align: center;
+  animation: appear linear;
+  animation-timeline: view();
 }
 .room-title {
   text-align: center;
@@ -421,6 +442,8 @@ header {
 .events {
   text-align: center;
   margin: 40px auto;
+  animation: appear linear;
+  animation-timeline: view();
 }
 .events_title span {
   color: #f49e09;
@@ -496,6 +519,8 @@ header {
 .reviews {
   margin: 30px auto;
   text-align: center;
+  animation: appear linear;
+  animation-timeline: view();
 }
 .reviews span {
   color: #f49e09;
@@ -532,12 +557,12 @@ header {
 }
 
 .review-box {
-  min-width: 300px;
-  height: 200px;
+  min-width: 400px;
+  height: 300px;
   overflow: hidden;
   margin: 10px;
   padding: 20px;
-  background-color: #e3e3e3;
+  background-image: url("images/testimonials-bg.png");
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   font-size: 25px;
 }

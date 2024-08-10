@@ -31,7 +31,7 @@ let heroData = [
     text1: "enjoy your day",
     text2: "elegant capturing",
     text3: "experience it",
-    image: "images/1_o0BEYAX6IQQbIHI2wUgoFw.jpg",
+    image: "images/EZPjPf1X0AM6Qak.jpg",
   },
   {
     text1: "make a break",
@@ -64,3 +64,39 @@ function updateHeroText() {
 }
 
 setInterval(updateHeroText, 3000);
+
+// let valueDisplays = document.querySelectorAll(".num");
+// let interval = 4000;
+
+// valueDisplays.forEach((valueDisplay) => {
+//   let startValue = 0;
+//   let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+//   let duration = math.floor(interval / endValue);
+//   let counter = setInterval(function () {
+//     startValue += 1;
+//     valueDisplay.textContent = startValue;
+//     if (startValue == endValue) {
+//       clearInterval(counter);
+//     }
+//   }, duration);
+// });
+
+let valueDisplays = document.querySelectorAll(".num");
+let interval = 4000;
+
+valueDisplays.forEach((valueDisplay) => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+
+  // Ensure duration is at least 1ms to avoid an infinite loop.
+  duration = Math.max(duration, 1);
+
+  let counter = setInterval(function () {
+    startValue += 1;
+    valueDisplay.textContent = startValue;
+    if (startValue === endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
+});
