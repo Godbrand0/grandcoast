@@ -31,13 +31,14 @@ let heroData = [
     text1: "enjoy your day",
     text2: "elegant capturing",
     text3: "experience it",
-    image: "images/EZPjPf1X0AM6Qak.jpg",
+    image:
+      "images/10816199_bee272a1bf134798be07b4215f872027_jpeg_jpege6851475d93476a9c34804a78a9dd435.jpg",
   },
   {
     text1: "make a break",
     text2: "adventure starts here",
     text3: "book a stay",
-    image: "images/2018-05-24.jpg",
+    image: "images/full-shot-man-carrying-baggage.jpg",
   },
   {
     text1: "imperial serenity",
@@ -47,39 +48,28 @@ let heroData = [
   },
 ];
 
+let boxes = document.querySelectorAll("header .header_texts");
 let currentIndex = 0;
+let intervalTime = 4000; // 2 seconds interval
 
-function updateHeroText() {
-  const heroText1 = document.querySelector(".hero_text_1");
-  const heroText2 = document.querySelector(".hero_text_2");
-  const heroButton = document.querySelector(".hero_text_3");
-  const headerImg = document.querySelector(".header_img");
+function iterateBoxes() {
+  // Clear any previous active classes
+  boxes.forEach((box) => box.classList.remove("true"));
 
-  heroText1.textContent = heroData[currentIndex].text1;
-  heroText2.textContent = heroData[currentIndex].text2;
-  heroButton.textContent = heroData[currentIndex].text3;
-  headerImg.src = heroData[currentIndex].image;
+  // Add active class to the current box
+  boxes[currentIndex].classList.add("true");
 
-  currentIndex = (currentIndex + 1) % heroData.length;
+  // Move to the next box
+  currentIndex++;
+
+  // If we reach the end of the boxes, reset to the first one
+  if (currentIndex >= boxes.length) {
+    currentIndex = 0;
+  }
 }
 
-setInterval(updateHeroText, 3000);
-
-// let valueDisplays = document.querySelectorAll(".num");
-// let interval = 4000;
-
-// valueDisplays.forEach((valueDisplay) => {
-//   let startValue = 0;
-//   let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-//   let duration = math.floor(interval / endValue);
-//   let counter = setInterval(function () {
-//     startValue += 1;
-//     valueDisplay.textContent = startValue;
-//     if (startValue == endValue) {
-//       clearInterval(counter);
-//     }
-//   }, duration);
-// });
+// Start the iteration
+setInterval(iterateBoxes, intervalTime);
 
 let valueDisplays = document.querySelectorAll(".num");
 let interval = 4000;

@@ -123,18 +123,80 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  animation: image 30s infinite ease-in;
 }
-.header_img {
+#header_1 {
+  background-image: url("images/full-shot-man-carrying-baggage.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 450px;
+  animation: header1 1s ease;
+}
+@keyframes header1 {
+  from {
+    filter: blur(5px);
+    opacity: 0.7;
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+#header_2 {
+  background-image: url("images/front-view-glasses-beer-with-wheat.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 450px;
+  animation: header2 1s ease;
+}
+@keyframes header2 {
+  from {
+    transform: translateY(-50px);
+    opacity: 0.7;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#header_3 {
+  background-image: url("images/1_o0BEYAX6IQQbIHI2wUgoFw.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 450px;
+  animation: header3 1s ease-in;
+}
+@keyframes header3 {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* .header_img {
   width: 100%;
   height: 500px;
   object-fit: cover;
   position: relative;
-
+  object-position: top center;
   opacity: 0.9;
-}
+} */
+
 .header_texts {
-  position: absolute;
   text-align: center;
+  display: none;
+}
+
+.true {
+  display: block;
 }
 .header_texts h1 {
   font-size: 60px;
@@ -143,13 +205,39 @@ header {
   font-weight: bold;
   font-family: "Dancing Script", cursive;
   text-transform: capitalize;
+  margin-top: 100px;
+  animation: header_text1 1s ease;
 }
+@keyframes header_text1 {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 .header_texts h4 {
   font-size: 30px;
-  color: #ffb703;
+  color: #f49e09;
+  text-transform: capitalize;
+
   letter-spacing: 2px;
   margin-top: 10px;
+  animation: header_text2 1s ease;
+  
 }
+@keyframes header_text2 {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .btn {
   color: #fff;
   background: #f49e09;
@@ -164,9 +252,20 @@ header {
   cursor: pointer;
   text-transform: uppercase;
   transition: 1s;
+  animation: btn 1s ease;
 }
 .btn:hover {
   background: #af7004;
+}
+@keyframes btn {
+  from {
+    transform: translateX(-400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .btn span {
   background: #fff;
@@ -850,10 +949,19 @@ footer {
 
     letter-spacing: 1.8px;
   }
-  .events_grid_img img {
+  .events_grid_img {
     width: 100%;
+    overflow: hidden;
     height: 200px;
-    object-fit: contain;
+  }
+  .events_grid_img img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .events_grid_img:nth-child(4) {
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
   }
   .event:nth-child(even) {
     margin: 5px auto;
