@@ -38,31 +38,51 @@ setTimeout(function () {
 let boxes = document.querySelectorAll("header .header_texts");
 let currentIndex = 0;
 let intervalTime = 4000;
+let intervalId;
+let isMouseOver = false; // Flag to track if the mouse is over the header
 
 function iterateBoxes() {
   boxes.forEach((box) => box.classList.remove("true"));
 
   boxes[currentIndex].classList.add("true");
 
-  currentIndex++;
+  // Increment currentIndex only if the mouse is not over the header
+  if (!isMouseOver) {
+    currentIndex++;
+  }
 
   if (currentIndex >= boxes.length) {
     currentIndex = 0;
   }
 }
+
+function startInterval() {
+  intervalId = setInterval(iterateBoxes, intervalTime);
+}
+
+function stopInterval() {
+  clearInterval(intervalId);
+}
+
+// Start the interval initially
+startInterval();
+
+// Get the header element
 const header = document.querySelector("header");
 
+// Set isMouseOver to true when hovering
 header.addEventListener("mouseover", () => {
-  header.style.animationPlayState = "paused";
+  isMouseOver = true;
+  stopInterval(); // Optional: Stop the interval when hovering
 });
 
+// Set isMouseOver to false when mouse leaves
 header.addEventListener("mouseout", () => {
-  header.style.animationPlayState = "running";
+  isMouseOver = false;
+  startInterval(); // Optional: Resume the interval when the mouse leaves
 });
 
 // number counter
-setInterval(iterateBoxes, intervalTime);
-
 let valueDisplays = document.querySelectorAll(".num");
 let interval = 4000;
 

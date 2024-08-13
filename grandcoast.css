@@ -13,8 +13,8 @@
   width: 150px;
   height: 150px;
   position: absolute;
-  top: calc(50vh - 75px);
-  left: calc(50vw - 75px);
+  top: calc(50vh - 100px);
+  left: calc(50vw - 100px);
 }
 .loader::before,
 .loader::after {
@@ -175,7 +175,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: image 30s infinite ease-in;
 }
 
 #header_1 {
@@ -207,6 +206,9 @@ header {
   height: 450px;
   animation: header2 1s ease;
 }
+#header_2 .hero_text_2 span {
+  color: #f49e09;
+}
 @keyframes header2 {
   from {
     transform: translateY(-50px);
@@ -217,6 +219,7 @@ header {
     opacity: 1;
   }
 }
+
 #header_3 {
   background-image: url("images/1_o0BEYAX6IQQbIHI2wUgoFw.jpg");
   background-position: top center;
@@ -246,6 +249,7 @@ header {
 .header_texts {
   text-align: center;
   display: none;
+  z-index: 4;
 }
 
 .true {
@@ -271,13 +275,14 @@ header {
 }
 
 .header_texts h4 {
-  font-size: 30px;
-  color: #f49e09;
+  font-size: 40px;
+  color: #fff;
   text-transform: capitalize;
 
   letter-spacing: 2px;
-  margin-top: 10px;
+  margin-top: 20px;
   animation: header_text2 1s ease;
+  font-family: "Bona Nova SC", serif;
 }
 @keyframes header_text2 {
   from {
@@ -885,11 +890,14 @@ footer {
     text-align: center;
   }
   .header_texts h1 {
-    font-size: 25px;
+    font-size: 35px;
     letter-spacing: 2px;
   }
   .header_texts h4 {
-    font-size: 18px;
+    font-size: 25px;
+  }
+  .header_texts button {
+    font-size: 10px;
   }
   .reservation {
     display: block;
