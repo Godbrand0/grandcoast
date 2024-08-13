@@ -32,6 +32,7 @@ close.addEventListener("click", () => {
 const loaderImg = document.querySelector(".loader_bg");
 setTimeout(function () {
   loaderImg.classList.toggle("hidden");
+  loaderImg.computedStyleMap.display = "none";
 }, 3000);
 
 //header-box animation
