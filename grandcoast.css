@@ -1,4 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400..700&family=Limelight&family=Zain:wght@200;300;400;700;800;900&display=swap");
+
+.loader_bg {
+  position: fixed;
+  z-index: 99999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+.loader {
+  border: 0 solid transparent;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50vh - 75px);
+  left: calc(50vw - 75px);
+}
+.loader::before,
+.loader::after {
+  content: "";
+  border: 1em solid #ff5733;
+  border-radius: 50%;
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loader 2s linear infinite;
+  opacity: 0;
+}
+.loader_bg.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+}
+
+.loader::before {
+  animation-delay: 0.5s;
+}
+@keyframes loader {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +59,6 @@
   list-style: none;
 }
 body {
-  padding: 10px;
   font-family: "Zain", sans-serif;
 }
 
@@ -123,9 +175,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-
   animation: image 30s infinite ease-in;
 }
+
 #header_1 {
   background-image: url("images/full-shot-man-carrying-baggage.jpg");
   background-position: top center;
@@ -135,6 +187,7 @@ header {
   height: 450px;
   animation: header1 1s ease;
 }
+
 @keyframes header1 {
   from {
     filter: blur(5px);
@@ -225,7 +278,6 @@ header {
   letter-spacing: 2px;
   margin-top: 10px;
   animation: header_text2 1s ease;
-  
 }
 @keyframes header_text2 {
   from {
