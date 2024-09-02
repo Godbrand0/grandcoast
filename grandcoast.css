@@ -756,6 +756,9 @@ footer {
   align-items: center;
   gap: 50px;
 }
+.footer_1 {
+  width: 30%;
+}
 .footer_1 h3 {
   font-size: 23px;
   font-weight: 400;
@@ -829,6 +832,7 @@ footer {
 }
 .footer_3 {
   text-align: right;
+  width: 30%;
 }
 .footer_3 h4 {
   font-size: 20px;
@@ -864,7 +868,7 @@ footer {
   0% {
     transform: scale(1);
   }
-  100% {
+  50% {
     transform: scale(1.5);
   }
 }
