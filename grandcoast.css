@@ -1047,7 +1047,10 @@ footer {
     font-size: 23px;
   }
   footer {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: auto;
     padding: 30px 20px;
     width: 100%;
